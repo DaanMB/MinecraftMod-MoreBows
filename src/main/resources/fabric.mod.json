@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "morebows",
+  "version": "${version}",
+  "name": "morebows",
+  "description": "A mod to add more bows",
+  "authors": [
+    "Daniel"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/morebows/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.github.daandolfijn.morebows.Main"
+    ]
+  },
+  "mixins": [
+    "morebows.mixins.json"
+  ],
+  "depends": {
+    "minecraft": "~26.2",
+    "fabric-api": "*"
+  }
+}
