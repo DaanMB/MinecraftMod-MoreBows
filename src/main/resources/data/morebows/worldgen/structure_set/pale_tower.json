@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "morebows:pale_tower",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 50,
+    "separation": 30,
+    "salt": 1646207123
+  }
+}

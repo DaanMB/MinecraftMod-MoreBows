@@ -13,7 +13,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "io.github.daandolfijn.morebows.Main"
+      "io.github.daandolfijn.morebows.MoreBows"
+    ],
+    "fabric-datagen": [
+      "io.github.daandolfijn.morebows.MoreBowsDataGenerator"
     ]
   },
   "mixins": [

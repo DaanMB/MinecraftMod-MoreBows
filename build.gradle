@@ -17,6 +17,12 @@ dependencies {
 	implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
 }
 
+fabricApi {
+	configureDataGeneration() {
+		client = true
+	}
+}
+
 processResources {
 	inputs.property "version", project.version
 
