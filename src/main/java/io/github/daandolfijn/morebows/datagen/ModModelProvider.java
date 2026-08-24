@@ -23,5 +23,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerators.createFlatItemModel(ModItems.PALE_BOW, ModelTemplates.BOW);
         itemModelGenerators.generateBow(ModItems.PALE_BOW);
+        itemModelGenerators.createFlatItemModel(ModItems.BASALT_BOW, ModelTemplates.BOW);
+        itemModelGenerators.generateBow(ModItems.BASALT_BOW);
     }
 }

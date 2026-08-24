@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_pale_orb": {
+      "conditions": {
+        "items": [
+          {
+            "items": "morebows:pale_orb"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "morebows:pale_bow"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_pale_orb"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "morebows:pale_bow"
+    ]
+  }
+}

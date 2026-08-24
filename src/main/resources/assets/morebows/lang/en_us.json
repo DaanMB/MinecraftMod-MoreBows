@@ -1,5 +1,8 @@
 {
   "item.morebows.pale_orb": "Pale orb",
   "item.morebows.pale_bow": "Pale bow",
-  "creativemodetab.morebows.morebows_items": "MoreBows Items"
+  "item.morebows.basalt_orb": "Basalt orb",
+  "item.morebows.basalt_bow": "Basalt bow",
+  "creativemodetab.morebows.morebows_items": "MoreBows Items",
+  "tooltip.morebows.pale_bow": "Arrows shot travel 2x as fast as from a normal bow"
 }

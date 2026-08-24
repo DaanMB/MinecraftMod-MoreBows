@@ -1,6 +1,11 @@
 // 26.2	-999999999-01-01T00:00:00	morebows/Model Definitions
+53424979df99ea32f9b34d56c8ef04d8df5617b1 assets/morebows/items/basalt_bow.json
 c5ba5358815546374692e47b6dc168a6796c7e88 assets/morebows/items/pale_bow.json
 8ebf23a82e7bd40f1e2f86a36d568ced1a430f5c assets/morebows/items/pale_orb.json
+312d4ad36acf1f0fb3d57ede59594e1e93f8a8fc assets/morebows/models/item/basalt_bow.json
+290b990d07df015249888f6fa87ed99e1eb10b1c assets/morebows/models/item/basalt_bow_pulling_0.json
+465d07d9c9bdda8486d214dcb6527542dc19adcf assets/morebows/models/item/basalt_bow_pulling_1.json
+631ac442d1456098b5d3f7f853a3a5cc37e27dc5 assets/morebows/models/item/basalt_bow_pulling_2.json
 9d0683775479e46a68a1f76de0c67c4d2a177e62 assets/morebows/models/item/pale_bow.json
 b18801d3b16cb3b46bdbbc348803523f09947177 assets/morebows/models/item/pale_bow_pulling_0.json
 6a397f067ae892bc12a47c0e645850520e147202 assets/morebows/models/item/pale_bow_pulling_1.json

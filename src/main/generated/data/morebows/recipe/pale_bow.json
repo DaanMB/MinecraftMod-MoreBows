@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "group": "morebows",
+  "ingredients": [
+    "minecraft:bow",
+    "morebows:pale_orb"
+  ],
+  "result": {
+    "id": "morebows:pale_bow"
+  }
+}

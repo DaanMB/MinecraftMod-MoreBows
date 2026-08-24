@@ -17,7 +17,9 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativemodetab.morebows.morebows_items"))
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.PALE_ORB);
+                        output.accept(ModItems.BASALT_ORB);
                         output.accept(ModItems.PALE_BOW);
+                        output.accept(ModItems.BASALT_BOW);
                     })
                     .build());
 
