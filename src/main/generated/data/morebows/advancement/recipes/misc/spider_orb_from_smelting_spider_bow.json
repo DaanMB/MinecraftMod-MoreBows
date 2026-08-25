@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_pale_orb": {
+    "has_spider_bow": {
       "conditions": {
         "items": [
           {
-            "items": "morebows:pale_orb"
+            "items": "morebows:spider_bow"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "morebows:pale_bow"
+        "recipe": "morebows:spider_orb_from_smelting_spider_bow"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_pale_orb"
+      "has_spider_bow"
     ]
   ],
   "rewards": {
     "recipes": [
-      "morebows:pale_bow"
+      "morebows:spider_orb_from_smelting_spider_bow"
     ]
   }
 }

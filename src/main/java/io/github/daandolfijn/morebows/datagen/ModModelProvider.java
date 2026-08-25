@@ -20,10 +20,19 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerators itemModelGenerators) {
         itemModelGenerators.generateFlatItem(ModItems.PALE_ORB, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.BASALT_ORB, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.SPIDER_ORB, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.GUARDIAN_ORB, ModelTemplates.FLAT_ITEM);
 
         itemModelGenerators.createFlatItemModel(ModItems.PALE_BOW, ModelTemplates.BOW);
         itemModelGenerators.generateBow(ModItems.PALE_BOW);
         itemModelGenerators.createFlatItemModel(ModItems.BASALT_BOW, ModelTemplates.BOW);
         itemModelGenerators.generateBow(ModItems.BASALT_BOW);
+        itemModelGenerators.createFlatItemModel(ModItems.SPIDER_BOW, ModelTemplates.BOW);
+        itemModelGenerators.generateBow(ModItems.SPIDER_BOW);
+        itemModelGenerators.createFlatItemModel(ModItems.GUARDIAN_BOW, ModelTemplates.BOW);
+        itemModelGenerators.generateBow(ModItems.GUARDIAN_BOW);
+        itemModelGenerators.createFlatItemModel(ModItems.SUPER_BOW, ModelTemplates.BOW);
+        itemModelGenerators.generateBow(ModItems.SUPER_BOW);
     }
 }

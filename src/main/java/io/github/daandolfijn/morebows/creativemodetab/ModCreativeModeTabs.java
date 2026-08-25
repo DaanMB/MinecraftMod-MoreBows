@@ -13,13 +13,19 @@ import net.minecraft.world.item.ItemStack;
 public class ModCreativeModeTabs {
     public static final CreativeModeTab MOREBOWS_ITEM_TAB = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
             Identifier.fromNamespaceAndPath(MoreBows.MOD_ID, "morebows_items"),
-            FabricCreativeModeTab.builder().icon(() -> new ItemStack(ModItems.PALE_ORB))
+            FabricCreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SUPER_BOW))
                     .title(Component.translatable("creativemodetab.morebows.morebows_items"))
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.PALE_ORB);
                         output.accept(ModItems.BASALT_ORB);
+                        output.accept(ModItems.SPIDER_ORB);
+                        output.accept(ModItems.GUARDIAN_ORB);
+
                         output.accept(ModItems.PALE_BOW);
                         output.accept(ModItems.BASALT_BOW);
+                        output.accept(ModItems.SPIDER_BOW);
+                        output.accept(ModItems.GUARDIAN_BOW);
+                        output.accept(ModItems.SUPER_BOW);
                     })
                     .build());
 

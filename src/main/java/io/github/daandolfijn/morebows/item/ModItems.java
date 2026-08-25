@@ -17,12 +17,49 @@ import java.util.function.Function;
 public class ModItems {
     public static final Item PALE_ORB = registerItem("pale_orb", Item::new);
     public static final Item BASALT_ORB = registerItem("basalt_orb", Item::new);
-
+    public static final Item SPIDER_ORB = registerItem("spider_orb", Item::new);
+    public static final Item GUARDIAN_ORB = registerItem("guardian_orb", Item::new);
 
     public static final Item PALE_BOW = registerItem("pale_bow",
-            properties -> new BowItem(properties.durability(1000)));
+            properties -> new PaleBowItem(properties.durability(1000)){
+                @Override
+                public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display, Consumer<Component> builder, TooltipFlag tooltipFlag) {
+                    builder.accept(Component.translatable("tooltip.morebows.pale_bow"));
+                    super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+                }
+            });
     public static final Item BASALT_BOW = registerItem("basalt_bow",
-            properties -> new BasaltBowItem(properties.durability(1000)));
+            properties -> new BowItem(properties.durability(1000)){
+                @Override
+                public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display, Consumer<Component> builder, TooltipFlag tooltipFlag) {
+                    builder.accept(Component.translatable("tooltip.morebows.basalt_bow"));
+                    super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+                }
+            });
+    public static final Item SPIDER_BOW = registerItem("spider_bow",
+            properties -> new BowItem(properties.durability(1000)){
+                @Override
+                public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display, Consumer<Component> builder, TooltipFlag tooltipFlag) {
+                    builder.accept(Component.translatable("tooltip.morebows.spider_bow"));
+                    super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+                }
+            });
+    public static final Item GUARDIAN_BOW = registerItem("guardian_bow",
+            properties -> new GuardianBowItem(properties.durability(1000)){
+                @Override
+                public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display, Consumer<Component> builder, TooltipFlag tooltipFlag) {
+                    builder.accept(Component.translatable("tooltip.morebows.guardian_bow"));
+                    super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+                }
+            });
+    public static final Item SUPER_BOW = registerItem("super_bow",
+            properties -> new SuperBowItem(properties.durability(1000)){
+                @Override
+                public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display, Consumer<Component> builder, TooltipFlag tooltipFlag) {
+                    builder.accept(Component.translatable("tooltip.morebows.super_bow"));
+                    super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+                }
+            });
 
     public static ResourceKey<Item> getRK(Item item) {
         return BuiltInRegistries.ITEM.getResourceKey(item).get();

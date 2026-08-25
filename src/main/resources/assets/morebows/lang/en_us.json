@@ -1,8 +1,17 @@
 {
   "item.morebows.pale_orb": "Pale orb",
-  "item.morebows.pale_bow": "Pale bow",
   "item.morebows.basalt_orb": "Basalt orb",
+  "item.morebows.spider_orb": "Spider orb",
+  "item.morebows.guardian_orb": "Guardian orb",
+  "item.morebows.pale_bow": "Pale bow",
   "item.morebows.basalt_bow": "Basalt bow",
+  "item.morebows.spider_bow": "Spider bow",
+  "item.morebows.guardian_bow": "Guardian bow",
+  "item.morebows.super_bow": "Super bow",
   "creativemodetab.morebows.morebows_items": "MoreBows Items",
-  "tooltip.morebows.pale_bow": "Arrows shot travel 2x as fast as from a normal bow"
+  "tooltip.morebows.pale_bow": "A bow that gives the arrows 2x velocity",
+  "tooltip.morebows.basalt_bow": "A bow that gives the arrows it shoots a trail of fire particles",
+  "tooltip.morebows.spider_bow": "A bow that spawns cobwebs on the block it falls on",
+  "tooltip.morebows.guardian_bow": "A bow that draws 2x as fast",
+  "tooltip.morebows.super_bow": "A bow that has the functionality from all the bows from morebows"
 }

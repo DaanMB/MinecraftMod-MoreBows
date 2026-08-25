@@ -4,9 +4,12 @@
   "group": "morebows",
   "ingredients": [
     "minecraft:bow",
-    "morebows:pale_orb"
+    "morebows:pale_orb",
+    "morebows:basalt_orb",
+    "morebows:spider_orb",
+    "morebows:guardian_orb"
   ],
   "result": {
-    "id": "morebows:pale_bow"
+    "id": "morebows:super_bow"
   }
 }

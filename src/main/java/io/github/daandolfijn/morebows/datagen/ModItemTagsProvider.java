@@ -17,5 +17,8 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
     protected void addTags(HolderLookup.Provider registries) {
         tag(ItemTags.BOW_ENCHANTABLE).add(ModItems.getRK(ModItems.PALE_BOW));
         tag(ItemTags.BOW_ENCHANTABLE).add(ModItems.getRK(ModItems.BASALT_BOW));
+        tag(ItemTags.BOW_ENCHANTABLE).add(ModItems.getRK(ModItems.SPIDER_BOW));
+        tag(ItemTags.BOW_ENCHANTABLE).add(ModItems.getRK(ModItems.GUARDIAN_BOW));
+        tag(ItemTags.BOW_ENCHANTABLE).add(ModItems.getRK(ModItems.SUPER_BOW));
     }
 }

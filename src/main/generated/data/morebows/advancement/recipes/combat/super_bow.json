@@ -1,0 +1,65 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_basalt_orb": {
+      "conditions": {
+        "items": [
+          {
+            "items": "morebows:basalt_orb"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_guardian_orb": {
+      "conditions": {
+        "items": [
+          {
+            "items": "morebows:guardian_orb"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_pale_orb": {
+      "conditions": {
+        "items": [
+          {
+            "items": "morebows:pale_orb"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_spider_orb": {
+      "conditions": {
+        "items": [
+          {
+            "items": "morebows:spider_orb"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "morebows:super_bow"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_pale_orb",
+      "has_basalt_orb",
+      "has_spider_orb",
+      "has_guardian_orb"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "morebows:super_bow"
+    ]
+  }
+}

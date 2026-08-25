@@ -32,5 +32,20 @@ public abstract class AbstractClientPlayerMixin extends Player {
             modifier *= 1.0F - Mth.square(scale) * 0.15F;
             info.setReturnValue(Mth.lerp(effectScale, 1.0F, modifier));
         }
+        if (this.isUsingItem() && this.getUseItem().is(ModItems.SPIDER_BOW)) {
+            float scale = Math.min((float)this.getTicksUsingItem() / 20.0F, 1.0F);
+            modifier *= 1.0F - Mth.square(scale) * 0.15F;
+            info.setReturnValue(Mth.lerp(effectScale, 1.0F, modifier));
+        }
+        if (this.isUsingItem() && this.getUseItem().is(ModItems.GUARDIAN_BOW)) {
+            float scale = Math.min((float)this.getTicksUsingItem() / 20.0F, 1.0F);
+            modifier *= 1.0F - Mth.square(scale) * 0.15F;
+            info.setReturnValue(Mth.lerp(effectScale, 1.0F, modifier));
+        }
+        if (this.isUsingItem() && this.getUseItem().is(ModItems.SUPER_BOW)) {
+            float scale = Math.min((float)this.getTicksUsingItem() / 20.0F, 1.0F);
+            modifier *= 1.0F - Mth.square(scale) * 0.15F;
+            info.setReturnValue(Mth.lerp(effectScale, 1.0F, modifier));
+        }
     }
 }

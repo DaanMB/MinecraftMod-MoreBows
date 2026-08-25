@@ -24,13 +24,26 @@ public class ModReciepeProvider extends FabricRecipeProvider {
         return new RecipeProvider(registries, output) {
             @Override
             public void buildRecipes() {
-                List<ItemLike> BOWS_SMELTABLE = List.of(ModItems.PALE_BOW);
-                oreSmelting(BOWS_SMELTABLE, RecipeCategory.MISC, CookingBookCategory.BLOCKS, ModItems.PALE_ORB, 0.25F, 200, "morebows");
+                List<ItemLike> PALE_BOW_SMELTABLE = List.of(ModItems.PALE_BOW);
+                oreSmelting(PALE_BOW_SMELTABLE, RecipeCategory.MISC, CookingBookCategory.BLOCKS, ModItems.PALE_ORB, 0.25F, 200, "morebows");
+                List<ItemLike> BASALT_BOW_SMELTABLE = List.of(ModItems.BASALT_BOW);
+                oreSmelting(BASALT_BOW_SMELTABLE, RecipeCategory.MISC, CookingBookCategory.BLOCKS, ModItems.BASALT_ORB, 0.25F, 200, "morebows");
+                List<ItemLike> SPIDER_BOW_SMELTABLE = List.of(ModItems.SPIDER_BOW);
+                oreSmelting(SPIDER_BOW_SMELTABLE, RecipeCategory.MISC, CookingBookCategory.BLOCKS, ModItems.SPIDER_ORB, 0.25F, 200, "morebows");
+                List<ItemLike> GUARDIAN_BOW_SMELTABLE = List.of(ModItems.GUARDIAN_BOW);
+                oreSmelting(SPIDER_BOW_SMELTABLE, RecipeCategory.MISC, CookingBookCategory.BLOCKS, ModItems.GUARDIAN_ORB, 0.25F, 200, "morebows");
 
-                shapeless(RecipeCategory.COMBAT, ModItems.PALE_BOW)
+
+                shapeless(RecipeCategory.COMBAT, ModItems.SUPER_BOW)
                         .requires(Items.BOW)
                         .requires(ModItems.PALE_ORB)
+                        .requires(ModItems.BASALT_ORB)
+                        .requires(ModItems.SPIDER_ORB)
+                        .requires(ModItems.GUARDIAN_ORB)
                         .unlockedBy(getHasName(ModItems.PALE_ORB), has(ModItems.PALE_ORB))
+                        .unlockedBy(getHasName(ModItems.BASALT_ORB), has(ModItems.BASALT_ORB))
+                        .unlockedBy(getHasName(ModItems.SPIDER_ORB), has(ModItems.SPIDER_ORB))
+                        .unlockedBy(getHasName(ModItems.GUARDIAN_ORB), has(ModItems.GUARDIAN_ORB))
                         .group("morebows")
                         .save(output);
             }
