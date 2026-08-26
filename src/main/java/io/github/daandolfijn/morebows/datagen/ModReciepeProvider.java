@@ -31,7 +31,7 @@ public class ModReciepeProvider extends FabricRecipeProvider {
                 List<ItemLike> SPIDER_BOW_SMELTABLE = List.of(ModItems.SPIDER_BOW);
                 oreSmelting(SPIDER_BOW_SMELTABLE, RecipeCategory.MISC, CookingBookCategory.BLOCKS, ModItems.SPIDER_ORB, 0.25F, 200, "morebows");
                 List<ItemLike> GUARDIAN_BOW_SMELTABLE = List.of(ModItems.GUARDIAN_BOW);
-                oreSmelting(SPIDER_BOW_SMELTABLE, RecipeCategory.MISC, CookingBookCategory.BLOCKS, ModItems.GUARDIAN_ORB, 0.25F, 200, "morebows");
+                oreSmelting(GUARDIAN_BOW_SMELTABLE, RecipeCategory.MISC, CookingBookCategory.BLOCKS, ModItems.GUARDIAN_ORB, 0.25F, 200, "morebows");
 
 
                 shapeless(RecipeCategory.COMBAT, ModItems.SUPER_BOW)

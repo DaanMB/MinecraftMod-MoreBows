@@ -3,7 +3,7 @@
   "category": "blocks",
   "experience": 0.25,
   "group": "morebows",
-  "ingredient": "morebows:spider_bow",
+  "ingredient": "morebows:guardian_bow",
   "result": {
     "id": "morebows:guardian_orb"
   }
